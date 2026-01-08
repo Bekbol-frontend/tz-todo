@@ -31,26 +31,6 @@
         "Angular"
       ],
       "createdAt": "2026-01-08T16:31:33.212Z"
-    },
-    {
-      "id": "f101",
-      "firstName": "vvfdvfdv",
-      "lastName": "vfdvfdvd",
-      "email": "fvwqs21",
-      "skills": [
-        "Vue"
-      ],
-      "createdAt": "2026-01-08T16:48:02.123Z"
-    },
-    {
-      "id": "9f40",
-      "firstName": "авыавы",
-      "lastName": "авыавы",
-      "email": "авыавы",
-      "skills": [
-        "Express Js"
-      ],
-      "createdAt": "2026-01-08T16:53:52.577Z"
     }
   ]
 }

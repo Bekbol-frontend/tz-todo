@@ -16,11 +16,11 @@ export const useCreateUserTodo = (form: FormInstance<any>) => {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: [queryKeys.getUserTodos] });
       navigate(appRoutes.home);
-      messageApi.success("Success create");
+      messageApi.success("Успешное создание!");
       form.resetFields();
     },
     onError: (error) => {
-      messageApi.error(`Error: ${error.message}`);
+      messageApi.error(`Ошибка: ${error.message}`);
     },
   });
 };

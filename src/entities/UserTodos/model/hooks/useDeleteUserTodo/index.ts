@@ -16,10 +16,10 @@ export const useDeleteUserTodo = ({ setUserId }: IProps) => {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: [queryKeys.getUserTodos] });
       setUserId(null);
-      messageApi.success("Успешно удалено!");
+      messageApi.success("Успешное удаление!");
     },
     onError: (error) => {
-      messageApi.error(`Error: ${error.message}`);
+      messageApi.error(`Ошибка: ${error.message}`);
     },
   });
 };

@@ -16,11 +16,11 @@ export const useUpdateUserTodo = (form: FormInstance<any>) => {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: [queryKeys.getUserTodos] });
       navigate(appRoutes.home);
-      messageApi.success("Success update");
+      messageApi.success("Успешное обновление!");
       form.resetFields();
     },
     onError: (error) => {
-      messageApi.error(`Error: ${error.message}`);
+      messageApi.error(`Ошибка: ${error.message}`);
     },
   });
 };

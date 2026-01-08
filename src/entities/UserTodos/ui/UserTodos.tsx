@@ -16,12 +16,12 @@ function UserTodos() {
   }, [navigate]);
 
   if (isError && error) {
-    return <ErrorContent title="Error" desc={error.message} />;
+    return <ErrorContent title="Ошибка" desc={error.message} />;
   }
 
   return (
     <>
-      <SectionTop title="User Todos" onClick={onToCreatePage} />
+      <SectionTop title="Пользовательские задачи" onClick={onToCreatePage} />
       <UserTodoTable data={data?.data} loading={isLoading} />
     </>
   );

@@ -39,12 +39,12 @@ function UserTodoTable({ data, loading }: IProps) {
         key: "id",
       },
       {
-        title: "First Name",
+        title: "Имя",
         dataIndex: "firstName",
         key: "firstName",
       },
       {
-        title: "Last Name",
+        title: "Фамилия",
         dataIndex: "lastName",
         key: "lastName",
       },
@@ -54,7 +54,7 @@ function UserTodoTable({ data, loading }: IProps) {
         key: "email",
       },
       {
-        title: "Skills",
+        title: "Навыки",
         dataIndex: "skills",
         key: "skills",
         render: (skills: string[]) =>
@@ -65,23 +65,23 @@ function UserTodoTable({ data, loading }: IProps) {
           )),
       },
       {
-        title: "Created At",
+        title: "Дата создания",
         dataIndex: "createdAt",
         key: "createdAt",
         render: (date: string) => formatDate(date),
       },
       {
-        title: "Action",
+        title: "Действия",
         key: "action",
         render: (_, record) => {
           return (
             <Space size="small">
               <Popconfirm
-                title="Delete the task"
-                description="Are you sure to delete this task?"
+                title="Удалить задачу"
+                description="Вы уверены, что удалите эту задачу?"
                 onConfirm={() => confirm(record.id)}
-                okText="Yes"
-                cancelText="No"
+                okText="Да"
+                cancelText="Нет"
               >
                 <Button
                   icon={<DeleteOutlined />}

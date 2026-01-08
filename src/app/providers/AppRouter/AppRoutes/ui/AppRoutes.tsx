@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { AppLayout } from "../../AppLayout";
 import { CreateUserPageLazy } from "@/pages/CreateUserPage";
 import { UpdateUserPageLazy } from "@/pages/UpdateUserPage";
+import { NotFoundPageAsync } from "@/pages/NotFoundPage";
 
 function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ function AppRoutes() {
           path={`${appRoutes.updateUser}/:id`}
           element={<UpdateUserPageLazy />}
         />
+        <Route path={appRoutes.notFound} element={<NotFoundPageAsync />} />
       </Route>
     </Routes>
   );

@@ -1,13 +1,13 @@
-import type { FormProps } from "antd";
+import { useEffect } from "react";
 import { Button, Card, Flex, Form, Input, Select } from "antd";
-import type { IUserForm } from "../model/types";
 import { skillsOptionArray } from "@/shared/constants/Skills";
 import { useCreateUserTodo } from "../model/hooks/useCreateUserTodo";
 import { useNavigate } from "react-router-dom";
 import { appRoutes } from "@/shared/config/routeConfig";
 import { useGetUserById } from "../model/hooks/useGetUserById";
-import { useEffect } from "react";
 import { useUpdateUserTodo } from "../model/hooks/useUpdateUserTodo";
+import type { FormProps } from "antd";
+import type { IUserForm } from "../model/types";
 
 interface IProps {
   id?: string;
@@ -53,23 +53,25 @@ function UserCreateForm({ id }: IProps) {
     <Card>
       <Form
         form={form}
-        name="create-user"
+        name={id ? "update-user" : "create-user"}
         onFinish={onFinish}
         autoComplete="off"
         layout="vertical"
       >
         <Form.Item<IUserForm>
-          label="First Name"
+          label="Имя"
           name="firstName"
-          rules={[{ required: true, message: "Please input your first name!" }]}
+          rules={[{ required: true, message: "Пожалуйста, введите ваше имя!" }]}
         >
           <Input />
         </Form.Item>
 
         <Form.Item<IUserForm>
-          label="Last Name"
+          label="Фамилия"
           name="lastName"
-          rules={[{ required: true, message: "Please input your last name!" }]}
+          rules={[
+            { required: true, message: "Пожалуйста, введите вашу фамилию!" },
+          ]}
         >
           <Input />
         </Form.Item>
@@ -77,15 +79,23 @@ function UserCreateForm({ id }: IProps) {
         <Form.Item<IUserForm>
           label="Email"
           name="email"
-          rules={[{ required: true, message: "Please input your email!" }]}
+          rules={[
+            {
+              type: "email",
+              required: true,
+              message: "Пожалуйста, введите свой адрес электронной почты!",
+            },
+          ]}
         >
           <Input />
         </Form.Item>
 
         <Form.Item<IUserForm>
-          label="Skills"
+          label="Навыки"
           name="skills"
-          rules={[{ required: true, message: "Please input your skills!" }]}
+          rules={[
+            { required: true, message: "Пожалуйста, укажите ваши навыки!" },
+          ]}
         >
           <Select mode="multiple" options={skillsOptionArray} />
         </Form.Item>
@@ -96,14 +106,14 @@ function UserCreateForm({ id }: IProps) {
             disabled={isPending || isPendingUpdate}
             onClick={() => navigate(appRoutes.home)}
           >
-            Back
+            Назад
           </Button>
           <Button
             type="primary"
             htmlType="submit"
             loading={isPending || isPendingUpdate}
           >
-            {id ? "Update" : "Create"}
+            {id ? "Редактировать" : "Создать"}
           </Button>
         </Flex>
       </Form>

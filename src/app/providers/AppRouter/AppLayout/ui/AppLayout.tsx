@@ -1,10 +1,10 @@
+import { Suspense } from "react";
 import { Layout } from "antd";
 import { Outlet } from "react-router-dom";
 import { HeaderNav } from "@/widgets/HeaderNav";
 import { FooterNav } from "@/widgets/FooterNav";
-import styles from "./AppLayout.module.scss";
-import { Suspense } from "react";
 import { LoadingPage } from "@/shared/ui/LoadingPage";
+import styles from "./AppLayout.module.scss";
 
 const { Content } = Layout;
 
