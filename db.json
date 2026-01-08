@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "firstName": "Bekbol",
+      "lastName": "Bekjanov",
+      "email": "bekbol@mail.com",
+      "skills": [
+        "React"
+      ],
+      "createdAt": "2026-01-08T17:55:44.647Z",
+      "id": "1"
+    },
+    {
+      "id": "adbb",
+      "firstName": "Jamal",
+      "lastName": "Muxiyatdinov",
+      "email": "jake@mail.ru",
+      "skills": [
+        "PHP Laravel",
+        "Java Spring"
+      ],
+      "createdAt": "2026-01-08T16:29:30.339Z"
+    },
+    {
+      "id": "02d1",
+      "firstName": "Alex",
+      "lastName": "robertov",
+      "email": "alex@.ru",
+      "skills": [
+        "Express Js",
+        "Angular"
+      ],
+      "createdAt": "2026-01-08T16:31:33.212Z"
+    },
+    {
+      "id": "f101",
+      "firstName": "vvfdvfdv",
+      "lastName": "vfdvfdvd",
+      "email": "fvwqs21",
+      "skills": [
+        "Vue"
+      ],
+      "createdAt": "2026-01-08T16:48:02.123Z"
+    },
+    {
+      "id": "9f40",
+      "firstName": "авыавы",
+      "lastName": "авыавы",
+      "email": "авыавы",
+      "skills": [
+        "Express Js"
+      ],
+      "createdAt": "2026-01-08T16:53:52.577Z"
+    }
+  ]
+}

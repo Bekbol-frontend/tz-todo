@@ -1,0 +1,9 @@
+.editBtn {
+  position: relative;
+  width: var(--width-btn-action);
+
+  & > .link {
+    position: absolute;
+    inset: 0;
+  }
+}

@@ -1,0 +1,10 @@
+.pageWrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-md);
+
+  @media screen and (min-width: 768px) {
+    padding: var(--space-xl);
+  }
+}

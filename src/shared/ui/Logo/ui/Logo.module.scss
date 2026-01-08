@@ -1,0 +1,18 @@
+.logoWrapper {
+  width: var(--width-logo);
+  height: var(--height-logo);
+  position: relative;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+  & > .link {
+    position: absolute;
+    inset: 0;
+    z-index: var(--z-index-logo);
+  }
+}
