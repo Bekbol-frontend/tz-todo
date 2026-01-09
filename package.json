@@ -15,6 +15,7 @@
     "@ant-design/icons": "6.x",
     "@tanstack/react-query": "^5.90.16",
     "antd": "^6.1.4",
+    "antd-style": "^4.1.0",
     "axios": "^1.13.2",
     "json-server": "^1.0.0-beta.3",
     "react": "^19.2.0",

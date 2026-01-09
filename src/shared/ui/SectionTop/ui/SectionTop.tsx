@@ -2,6 +2,7 @@ import { Button, Flex, Typography } from "antd";
 import styles from "./SectionTop.module.scss";
 import { PlusOutlined } from "@ant-design/icons";
 import { clsx } from "@/shared/lib/clsx";
+import { useResponsive } from "@/shared/lib/hooks/useResponsive";
 
 const { Title } = Typography;
 
@@ -12,13 +13,19 @@ interface IProps {
 }
 
 function SectionTop({ title, onClick, className = "" }: IProps) {
+  const { sm } = useResponsive();
+
+  console.log(sm);
+
   return (
     <Flex
       className={clsx([styles.sectionTop, className])}
       align="center"
       justify="space-between"
+      gap={10}
+      vertical={!sm}
     >
-      <Title level={3} className={styles.title}>
+      <Title level={sm ? 3 : 4} className={styles.title}>
         {title}
       </Title>
       <Button

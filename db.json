@@ -4,9 +4,7 @@
       "firstName": "Bekbol",
       "lastName": "Bekjanov",
       "email": "bekbol@mail.com",
-      "skills": [
-        "React"
-      ],
+      "skills": ["React"],
       "createdAt": "2026-01-08T17:55:44.647Z",
       "id": "1"
     },
@@ -15,10 +13,7 @@
       "firstName": "Jamal",
       "lastName": "Muxiyatdinov",
       "email": "jake@mail.ru",
-      "skills": [
-        "PHP Laravel",
-        "Java Spring"
-      ],
+      "skills": ["PHP Laravel", "Java Spring"],
       "createdAt": "2026-01-08T16:29:30.339Z"
     },
     {
@@ -26,11 +21,144 @@
       "firstName": "Alex",
       "lastName": "robertov",
       "email": "alex@.ru",
-      "skills": [
-        "Express Js",
-        "Angular"
-      ],
+      "skills": ["Express Js", "Angular"],
       "createdAt": "2026-01-08T16:31:33.212Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
+    },
+    {
+      "id": "1d1f",
+      "firstName": "dsadsa",
+      "lastName": "fddsvds",
+      "email": "dsfds@mail.ru",
+      "skills": ["Redux", "Vue", "TypeScript"],
+      "createdAt": "2026-01-09T05:38:28.835Z"
     }
   ]
 }

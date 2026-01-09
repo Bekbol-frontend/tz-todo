@@ -8,6 +8,11 @@ import { formatDate } from "@/shared/lib/formatDate";
 import { Link } from "react-router-dom";
 import { appRoutes } from "@/shared/config/routeConfig";
 import styles from "./UserTodoTable.module.scss";
+import { useStyle } from "./style";
+import { useResponsive } from "@/shared/lib/hooks/useResponsive";
+
+const HEIGHT_Y_TABLE_DESKTOP = 85 * 5;
+const HEIGHT_Y_TABLE_MOBILE = 85 * 4;
 
 const { Text } = Typography;
 
@@ -23,6 +28,9 @@ function UserTodoTable({ data, loading }: IProps) {
 
   const { mutate, isPending } = deleteMutation;
 
+  const { styles: style } = useStyle();
+  const { sm } = useResponsive();
+
   const confirm = useCallback(
     (id: string) => {
       setUserId(id);
@@ -37,16 +45,20 @@ function UserTodoTable({ data, loading }: IProps) {
         title: "ID",
         dataIndex: "id",
         key: "id",
+        width: 100,
+        fixed: "start",
       },
       {
         title: "Имя",
         dataIndex: "firstName",
         key: "firstName",
+        sorter: (a, b) => a.firstName.localeCompare(b.firstName),
       },
       {
         title: "Фамилия",
         dataIndex: "lastName",
         key: "lastName",
+        sorter: (a, b) => a.lastName.localeCompare(b.lastName),
       },
       {
         title: "Email",
@@ -69,6 +81,8 @@ function UserTodoTable({ data, loading }: IProps) {
         dataIndex: "createdAt",
         key: "createdAt",
         render: (date: string) => formatDate(date),
+        sorter: (a, b) =>
+          new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime(),
       },
       {
         title: "Действия",
@@ -116,6 +130,11 @@ function UserTodoTable({ data, loading }: IProps) {
         dataSource={data}
         loading={loading}
         pagination={false}
+        className={style.customTable}
+        scroll={{
+          x: "max-content",
+          y: sm ? HEIGHT_Y_TABLE_DESKTOP : HEIGHT_Y_TABLE_MOBILE,
+        }}
       />
     </Card>
   );

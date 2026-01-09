@@ -1,17 +1,18 @@
 import { Container } from "@/shared/ui/Container";
 import { Flex, Layout, Typography } from "antd";
+import styles from "./FooterNav.module.scss";
 
 const { Footer } = Layout;
 const { Paragraph } = Typography;
 
 function FooterNav() {
   return (
-    <Footer>
+    <Footer className={styles.footer}>
       <Container>
         <Flex>
           <Flex vertical>
             <Paragraph>
-              Todo List Frontend Test Task | DEV: Бекбол Бекжанов
+              Список задач для тестирования интерфейса | DEV: Бекбол Бекжанов
             </Paragraph>
           </Flex>
         </Flex>
