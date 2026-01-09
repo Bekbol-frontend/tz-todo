@@ -2,6 +2,13 @@ import type { ReactNode } from "react";
 import { ConfigProvider } from "antd";
 import { useResponsive } from "@/shared/lib/hooks/useResponsive";
 
+const componentHeihgt = {
+  headerHeight: 90,
+  buttonHeight: 38,
+  inputHeight: 38,
+  selectHeight: 38,
+};
+
 interface IProps {
   children: ReactNode;
 }
@@ -18,15 +25,18 @@ function AntdConfigProvider({ children }: IProps) {
         },
         components: {
           Layout: {
-            headerHeight: 90,
+            headerHeight: componentHeihgt.headerHeight,
             headerPadding: 0,
             footerPadding: 0,
           },
           Button: {
-            controlHeight: 38,
+            controlHeight: componentHeihgt.buttonHeight,
           },
           Input: {
-            controlHeight: 38,
+            controlHeight: componentHeihgt.inputHeight,
+          },
+          Select: {
+            controlHeight: componentHeihgt.selectHeight,
           },
         },
       }}

@@ -15,8 +15,6 @@ interface IProps {
 function SectionTop({ title, onClick, className = "" }: IProps) {
   const { sm } = useResponsive();
 
-  console.log(sm);
-
   return (
     <Flex
       className={clsx([styles.sectionTop, className])}
