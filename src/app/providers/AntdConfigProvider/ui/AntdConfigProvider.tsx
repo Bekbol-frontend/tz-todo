@@ -9,6 +9,9 @@ const componentHeihgt = {
   selectHeight: 38,
 };
 
+const fontSizeDesktop = 16;
+const fontSizeMobile = 14;
+
 interface IProps {
   children: ReactNode;
 }
@@ -21,7 +24,7 @@ function AntdConfigProvider({ children }: IProps) {
       theme={{
         token: {
           fontFamily: "var(--font-roboto)",
-          fontSize: sm ? 16 : 14,
+          fontSize: sm ? fontSizeDesktop : fontSizeMobile,
         },
         components: {
           Layout: {
