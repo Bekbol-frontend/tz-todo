@@ -52,12 +52,18 @@ function UserTodoTable({ data, loading }: IProps) {
         title: "Имя",
         dataIndex: "firstName",
         key: "firstName",
+        render: (name: string) => (
+          <Text className={styles.capitalize}>{name}</Text>
+        ),
         sorter: (a, b) => a.firstName.localeCompare(b.firstName),
       },
       {
         title: "Фамилия",
         dataIndex: "lastName",
         key: "lastName",
+        render: (lastName: string) => (
+          <Text className={styles.capitalize}>{lastName}</Text>
+        ),
         sorter: (a, b) => a.lastName.localeCompare(b.lastName),
       },
       {
